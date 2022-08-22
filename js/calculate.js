@@ -9,8 +9,9 @@ function createSelectedLi(event1){
     const li = document.createElement('li');
     li.innerText = event1;
     placesUL.append(li);}
-
 }
+
+////////player - Added - In - List - section//////////////////
 document.getElementById('sommo').addEventListener('click',function(){
     const sommoField = document.getElementById('sommo-sarkar');
     const sommoString = sommoField.innerText;
@@ -49,6 +50,7 @@ document.getElementById('tamim').addEventListener('click',function(){
 
 });
 
+////////////////----- calculate section ///////////
 document.getElementById('calculate-btn').addEventListener('click',function(){
     const liItem = document.getElementById("ol-item").getElementsByTagName("li").length;
     const litotal = parseInt(liItem);
@@ -60,6 +62,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
     
 });
 
+// //////////////------calculate totla section ////////
 document.getElementById('calculate-total-btn').addEventListener('click',function(){
     const managerField = document.getElementById('manager-field');
     const managerValueString = managerField.value;
