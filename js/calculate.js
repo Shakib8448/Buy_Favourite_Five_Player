@@ -70,7 +70,13 @@ document.getElementById('calculate-total-btn').addEventListener('click',function
     const caoachValueString = coachField.value;
     const coahValue = parseInt(caoachValueString);
    
+    const playerExpenseField = document.getElementById('player-expance');
+    const playerExpenseString = playerExpenseField.innerText;
+    const playerExpense = parseInt(playerExpenseString);
     
+    const total = managerVAlue+coahValue+playerExpense;
+    const totalField = document.getElementById('total');
+    totalField.innerText = total;
 
 
 })
