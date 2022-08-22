@@ -1,12 +1,11 @@
 function createSelectedLi(event1){
-    const liItem = document.getElementById("ul-item").getElementsByTagName("li").length;
-    console.log(parseInt(liItem)+1);
+    const liItem = document.getElementById("ol-item").getElementsByTagName("li").length;
     if( parseInt(liItem)+1>5){
         alert('Select Limit is:-5,,,!!You cross The Limit!!')
         return;
     } 
     else{
-    const placesUL =document.querySelector('#places-container ul')
+    const placesUL =document.querySelector('#places-container ol')
     const li = document.createElement('li');
     li.innerText = event1;
     placesUL.append(li);}
@@ -50,3 +49,28 @@ document.getElementById('tamim').addEventListener('click',function(){
 
 });
 
+document.getElementById('calculate-btn').addEventListener('click',function(){
+    const liItem = document.getElementById("ol-item").getElementsByTagName("li").length;
+    const litotal = parseInt(liItem);
+    const perPlayerPrice = document.getElementById('per-player-price');
+    const perPlayerValue = perPlayerPrice.value;
+    const perPlayer = parseInt(perPlayerValue);
+    const playerExpenseField = document.getElementById('player-expance');
+    playerExpenseField.innerText = perPlayer*litotal;
+    
+});
+
+document.getElementById('calculate-total-btn').addEventListener('click',function(){
+    const managerField = document.getElementById('manager-field');
+    const managerValueString = managerField.value;
+    const managerVAlue = parseInt(managerValueString);
+
+
+    const coachField = document.getElementById('coach-field');
+    const caoachValueString = coachField.value;
+    const coahValue = parseInt(caoachValueString);
+   
+    
+
+
+})

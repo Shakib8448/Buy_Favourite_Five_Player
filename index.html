@@ -77,40 +77,39 @@
            </div>
            <div class="deshbord text-center text-white">
                 <div class="h-50 w-100 d-inline-block bg-dark mb-5 pt-3">
-                        <h1>Selected - 5</h1>
-                        <div id="places-container">
-                            <ul id="ul-item">
-
-                            </ul>
-                        </div>
+                    <h1>Selected - 5</h1>
+                    <div id="places-container">
+                        <ol id="ol-item">
+                        </ol>
+                    </div>
                 </div>
                 <div class="h-100 w-100 bg-dark pt-3 d-inline-block">
                     <h1>Budget</h1>
                     <h3 class="d-inline-block mx-2">Per Player</h3>
-                    <input class="" type="text">
+                    <input id="per-player-price" class="" type="text">
 
                     <br>
-                    <div class="mt-2 mb-3"><button type="button" class="btn btn-primary">Calculate</button></div>
+                    <div id="calculate-btn" class="mt-2 mb-3"><button type="button" class="btn btn-primary">Calculate</button></div>
                     <h3 class="d-inline-block mx-2">Player Expenses</h3>
-                    <h3 class="d-inline-block mx-2 mb-5 text-danger">$<span>5000</span></h3>
+                    <h3 class="d-inline-block mx-2 mb-5 text-danger">$<span id="player-expance">0000</span></h3>
 
                     <br>
                     <h3 class="d-inline-block mx-2">Manager</h3>
-                    <input class="d-inline-block" type="text">
+                    <input id="manager-field" class="d-inline-block" type="text">
 
                     <br>
                     <h3 class="d-inline-block mx-4">Coach</h3>
-                    <input class="d-inline-block" type="text">
-                    <div class="mt-2 mb-3"><button type="button" class="btn btn-primary">Calculate Total</button></div>
+                    <input id="coach-field" class="d-inline-block" type="text">
+                    <div id="calculate-total-btn" class="mt-2 mb-3"><button type="button" class="btn btn-primary">Calculate Total</button></div>
 
                     <br>
                     <h3 class="d-inline-block mx-2">Total</h3>
-                    <h3 class="d-inline-block mx-2 mb-5 text-danger">$<span>5000</span></h3>
-                    
+                    <h3 class="d-inline-block mx-2 mb-5 text-danger">$<span id="total">0000</span></h3>
                 </div>
            </div>
         </section>
     </main>
+    <script src="js/utility.js"></script>
     <script src="js/calculate.js"></script>
 </body>
 </html>
